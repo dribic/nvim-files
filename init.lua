@@ -154,6 +154,9 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- Set file Encoding to UTF-8
+vim.opt.fileencoding = 'utf-8'
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -607,6 +610,9 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'black', -- Used to format Python code
+        'isort', -- Used to format Python code
+        'goimports', -- Used to format Go code
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -654,7 +660,7 @@ require('lazy').setup({
         lua = { 'stylua' },
         -- Conform can also run multiple formatters sequentially
         python = { 'isort', 'black' },
-        go = { 'goimport' },
+        go = { 'goimports' },
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
