@@ -3,6 +3,7 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+  -- Harpoon
   {
     'ThePrimeagen/harpoon',
     branch = 'harpoon2',
@@ -44,8 +45,13 @@ return {
       end)
     end,
   },
+  -- Themes
   {
     'rose-pine/neovim',
     name = 'rose-pine',
+  },
+  {
+    'rebelot/kanagawa.nvim',
+    name = 'kanagawa',
   },
 }

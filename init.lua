@@ -572,6 +572,7 @@ require('lazy').setup({
         gopls = {},
         pyright = {},
         rust_analyzer = {},
+        zls = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -661,6 +662,7 @@ require('lazy').setup({
         -- Conform can also run multiple formatters sequentially
         python = { 'isort', 'black' },
         go = { 'goimports' },
+        zig = { 'zig fmt' },
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
