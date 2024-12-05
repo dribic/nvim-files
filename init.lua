@@ -664,6 +664,7 @@ require('lazy').setup({
         'black', -- Used to format Python code
         'isort', -- Used to format Python code
         'goimports', -- Used to format Go code
+        'bash-language-server', -- Used to format Bash code
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -720,6 +721,7 @@ require('lazy').setup({
         python = { 'isort', 'black' },
         go = { 'goimports' },
         zig = { 'zig fmt' },
+        bash = { 'bash-language-server' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
