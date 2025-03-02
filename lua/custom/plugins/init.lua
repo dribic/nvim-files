@@ -54,4 +54,8 @@ return {
     'rebelot/kanagawa.nvim',
     name = 'kanagawa',
   },
+  {
+    'dasupradyumna/midnight.nvim',
+    name = 'midnight',
+  },
 }
