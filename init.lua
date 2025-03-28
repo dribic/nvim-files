@@ -150,14 +150,14 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
 
+-- Set file Encoding to UTF-8
+vim.opt.fileencoding = 'utf-8'
+
 -- Show which line your cursor is on
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
-
--- Set file Encoding to UTF-8
-vim.opt.fileencoding = 'utf-8'
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
