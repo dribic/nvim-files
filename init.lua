@@ -153,6 +153,9 @@ vim.opt.inccommand = 'split'
 -- Set file Encoding to UTF-8
 vim.opt.fileencoding = 'utf-8'
 
+-- Set file format to Unix
+vim.o.fileformat = 'unix'
+
 -- Show which line your cursor is on
 vim.opt.cursorline = true
 
