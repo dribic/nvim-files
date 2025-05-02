@@ -671,9 +671,9 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         gopls = {},
-        pyright = {},
         rust_analyzer = {},
         zls = {},
+        ruff = {}, -- Python
         bashls = {
           filetypes = { 'sh', 'bash' },
           cmd = { 'bash-language-server', 'start' },
@@ -720,8 +720,7 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
-        'black', -- Used to format Python code
-        'isort', -- Used to format Python code
+        'ruff', -- Used to format Python code
         'goimports', -- Used to format Go code
         'bash-language-server', -- Used to format Bash code
       })
