@@ -671,9 +671,9 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         gopls = {},
+        pyright = {}, -- Python
         rust_analyzer = {},
         zls = {},
-        ruff = {}, -- Python
         bashls = {
           filetypes = { 'sh', 'bash' },
           cmd = { 'bash-language-server', 'start' },
