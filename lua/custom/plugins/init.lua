@@ -17,7 +17,6 @@ do
   vim.pack.add({'https://github.com/nvim-lua/plenary.nvim'})
   vim.pack.add{{src = 'https://github.com/ThePrimeagen/harpoon', version = 'harpoon2'}}
 
-  config = function()
       local harpoon = require 'harpoon'
 
       -- REQUIRED
@@ -51,5 +50,4 @@ do
       vim.keymap.set('n', '<C-s>', function()
         harpoon:list():next()
       end)
-    end
 end
