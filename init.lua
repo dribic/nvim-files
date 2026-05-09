@@ -769,7 +769,6 @@ do
     -- You can add other tools here that you want Mason to install
     'goimports', -- Used to format Go code
     'bash-language-server', -- Used to format Bash code
-
   })
 
   require('mason-tool-installer').setup { ensure_installed = ensure_installed }
@@ -792,8 +791,12 @@ do
     format_on_save = function(bufnr)
       -- You can specify filetypes to autoformat on save here:
       local enabled_filetypes = {
-        -- lua = true,
-        -- python = true,
+        lua = true,
+        python = true,
+        zig = true,
+        bash = true,
+        go = true,
+        rust = true,
       }
       if enabled_filetypes[vim.bo[bufnr].filetype] then
         return { timeout_ms = 500 }
