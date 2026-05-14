@@ -172,6 +172,12 @@ do
   -- See `:help 'confirm'`
   vim.o.confirm = true
 
+  -- Set file Encoding to UTF-8
+  vim.o.fileencoding = 'utf-8'
+
+  -- Set file format to Unix
+  vim.o.fileformat = 'unix'
+
   -- [[ Basic Keymaps ]]
   --  See `:help vim.keymap.set()`
 
