@@ -318,8 +318,7 @@ do
     end,
   })
 
-  -- Keyboard shortcuts for vim.pack
-  vim.keymap.set('n', '<leader>vpi', '<cmd>lua vim.pack.update(nil, { offline = true })<CR>', { desc = 'Checking if there are updates for plugins' })
+  -- Keyboard shortcut for vim.pack
   vim.keymap.set('n', '<leader>vpu', '<cmd>lua vim.pack.update()<CR>', { desc = 'Updating the plugins' })
 end
 
