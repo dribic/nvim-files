@@ -950,7 +950,7 @@ do
       zig = { -- Added forked repo, that has been updated to 0.16.0
         install_info = {
           url = 'https://github.com/aneryu/tree-sitter-zig',
-          revision = 'e08bc56',
+          revision = 'e08bc56240cd29fb102b8024a01c4e9072c92960',
           use_repo_queries = true,
         },
       },
