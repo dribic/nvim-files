@@ -35,3 +35,14 @@ do
   vim.keymap.set('n', '<C-a>', function() harpoon:list():prev() end)
   vim.keymap.set('n', '<C-s>', function() harpoon:list():next() end)
 end
+
+-- Lazydev (to speed-up lua_ls)
+do
+  vim.pack.add { 'https://github.com/folke/lazydev.nvim' }
+
+  require('lazydev').setup {
+    library = {
+      'nvim-dap-ui',
+    },
+  }
+end
