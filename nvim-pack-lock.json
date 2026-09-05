@@ -32,7 +32,7 @@
       "version": "'harpoon2'"
     },
     "indent-blankline.nvim": {
-      "rev": "3b1ee1854c1067c34cad2423eb78e280d4069e01",
+      "rev": "f1e186e44d3b7f9ae918008e2c28ce37c6023d2d",
       "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
     },
     "kanagawa.nvim": {
@@ -64,7 +64,7 @@
       "src": "https://github.com/dasupradyumna/midnight.nvim"
     },
     "mini.nvim": {
-      "rev": "9d01f392b33fb2ba36fbc87fc0bf4453e63ffb0a",
+      "rev": "ee23d71c02440668cbca5b0cd8640d79d5bc250b",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "neo-tree.nvim": {
@@ -97,7 +97,7 @@
       "src": "https://github.com/rcarriga/nvim-dap-ui"
     },
     "nvim-lspconfig": {
-      "rev": "85e732c62ac59ab7c12df71ddd020baa87948390",
+      "rev": "84252f9832fb5b9024fe9f7258e7c2aff915e6fb",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
