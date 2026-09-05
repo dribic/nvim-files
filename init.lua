@@ -767,7 +767,7 @@ do
     -- Some languages (like rust) have entire language plugins that can be useful:
     --    https://github.com/mrcjkb/rustaceanvim
     --
-    -- But for many setups, the LSP (`ts_ls`) will work just fine
+    -- But for many setups, the LSP (`rust_analyzer`) will work just fine
     rust_analyzer = {},
 
     stylua = {}, -- Used to format Lua code
