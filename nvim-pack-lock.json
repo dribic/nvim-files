@@ -5,6 +5,10 @@
       "src": "https://github.com/L3MON4D3/LuaSnip",
       "version": "2.0.0 - 3.0.0"
     },
+    "blazingjj.nvim": {
+      "rev": "c3490cbf46b316e1914e56bb7e6debf3185f2db1",
+      "src": "https://opencommit.eu/sejo/blazingjj.nvim.git"
+    },
     "blink.cmp": {
       "rev": "78336bc89ee5365633bcf754d93df01678b5c08f",
       "src": "https://github.com/saghen/blink.cmp",
