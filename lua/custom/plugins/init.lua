@@ -15,7 +15,7 @@ end
 
 -- Harpoon
 do
-  vim.pack.add { 'https://github.com/nvim-lua/plenary.nvim' }
+  vim.pack.add { 'https://github.com/nvim-lua/plenary.nvim' } -- Dependency
   vim.pack.add { { src = 'https://github.com/ThePrimeagen/harpoon', version = 'harpoon2' } }
 
   local harpoon = require 'harpoon'
@@ -45,5 +45,15 @@ do
     library = {
       'nvim-dap-ui',
     },
+  }
+end
+
+-- BlazingJJ
+do
+  vim.pack.add { 'https://github.com/nvim-lua/plenary.nvim' } -- Dependency
+  vim.pack.add { 'https://opencommit.eu/sejo/blazingjj.nvim.git' }
+
+  require('blazingjj').setup {
+    mapping = '<leader>jj', -- Change the default keymap
   }
 end
