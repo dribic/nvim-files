@@ -753,6 +753,7 @@ do
     pyright = {},
     ruff = {},
     -- tsc = {},
+    bashls = {},
     zls = {},
 
     -- Some languages (like rust) have entire language plugins that can be useful:
@@ -852,6 +853,7 @@ do
         bash = true,
         go = true,
         rust = true,
+        sh = true,
       }
       if enabled_filetypes[vim.bo[bufnr].filetype] then
         return { timeout_ms = 500 }
