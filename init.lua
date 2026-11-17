@@ -748,13 +748,20 @@ do
   --  See `:help lsp-config` for information about keys and how to configure
   ---@type table<string, vim.lsp.Config>
   local servers = {
-    -- clangd = {},
+    clangd = {},
     gopls = {},
     ty = {},
     ruff = {},
     -- tsc = {},
     bashls = {},
-    zls = {},
+    zls = {
+      settings = {
+        zls = {
+          enable_build_on_save = true,
+          build_on_save_args = { 'check' },
+        },
+      },
+    },
 
     -- Some languages (like rust) have entire language plugins that can be useful:
     --    https://github.com/mrcjkb/rustaceanvim
